@@ -8,5 +8,6 @@ Manage -> Pugins ->Build pipeline(install) ->
 Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Displayed Builds -> No ->Save 
  
 
-![image](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/8a3a589c-3eba-49bd-8989-cf60f4f918b5)
+![demo](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/b42d600f-0c0e-4994-8905-691e371c1bef)
+
 

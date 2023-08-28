@@ -13,4 +13,9 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
 
 ![demo](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/b42d600f-0c0e-4994-8905-691e371c1bef)
 
+* Pipeline = [Dev -> Application Test -> Integration Test -> Acceptance Test -> Production]
+  we have a pipeline here all the jobs/ processes are linked with each other , That is one runs after the other
+  they all executed with a automatic trigger . so id dev job is successfull it automatically runs test job and so on..
+ * Jenkis Pipeline - I s a Way to implement ci cd , all jobs starting from Build to deploye to test to release can be chained with each other. 
+
 

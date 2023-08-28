@@ -34,6 +34,12 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
 
    ![JenkinsPipeline](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/f38e12d6-d08a-4bd6-85b8-756a91f8154d)
 
+   ## Jenkis Pipeline | Get Jenkins File From Git 
+
+   Step 1 : Create a new Job or use Existing Job (Type: Pipeline )
+
+   Step 2 : Go to Configure -> Pipeline Section -> Choose SCM Script
+
              
 
 

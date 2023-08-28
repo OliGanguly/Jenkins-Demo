@@ -40,6 +40,13 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
 
    Step 2 : Go to Configure -> Pipeline Section -> Choose SCM Script
 
+   Step 3 : Create A file in github repo , with name jenkinsFile or what ever and provide  repo url , credential , Filename , Branch name ->Save 
+
+   Step 4 : Build
+
+   ![Output](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/0b5e4126-8a73-4dd3-b58a-a88f03725b7b)
+
+
              
 
 

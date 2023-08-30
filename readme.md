@@ -62,7 +62,10 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
       //ubantu does not has docker permission
     * sudo usermod -a -G docker @USER // modify user oermission append in a group of docker, add ubantu user in docker group
     * sudo reboot
-    
+
+ Docker will prepare a build 
+  * ![dockerFile](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/17746766-d050-4256-9913-76a43dadabb2)
+   
 
   
 

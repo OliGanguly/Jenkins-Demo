@@ -64,7 +64,17 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
     * sudo reboot
 
  Docker will prepare a build 
-  * ![dockerFile](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/17746766-d050-4256-9913-76a43dadabb2)
+ # All this things will automated by 
+ # docker build -t app_name .
+* ![dockerFile](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/17746766-d050-4256-9913-76a43dadabb2)
+cat DockerFile
+* Image directory would be /app/backend [current dir]
+* copy requirments.txt to app/backend ->requirements has all dependencies to run this project 
+* run pip install -r requirments.txt pip->python package installer
+  
+
+
+    
    
 
   

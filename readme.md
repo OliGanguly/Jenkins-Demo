@@ -167,15 +167,56 @@ stage("Deploy"){
   //So note-application image is with you -> Push to Docker Hub
 * create account in hub.dockerhub.com
   ![DockerHub](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/d76091e2-663e-48d7-9400-6e7e339a0e83)
-terminal -> doker login
 
-![dockerHubLogin](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/fe79376f-a0cd-4b38-ab1a-719642f5c1f3)
+* terminal -> $doker login
 
+* Env ->Get credential from env
+* Create ID , and ADD userName Password in that ID
+* Fetch userName password from Id
 
+  * Dashboard->Manage jenkins ->Credential ->System -> Global Credential -> Give User Name and Password
+
+  Id -> dockerHub
   
- 
 
-##Deploy   
+##Push To Docker Hub  
+
+## Installation
+
+Install my-project with npm
+
+```bash
+pipeline{
+agents any
+stages{
+stage("Code"){
+ steps{
+            echo "Cloning The Code"  
+            git url:"https://github.com/OliGanguly/django-notes-app.git",branch:"main"
+      }
+}
+stage("Build"){
+steps{
+             echo "Building The Code"  ,
+             sh "docker build -t note-application ."
+      } 
+}
+
+ stage("Push to DockerHub"){
+           steps{
+            echo "Push The Code to Docker Hub"
+            withCredentials([usernamePassword(credentialsId:"dockerHub",passwordVariable:"dockeHubPass",usernameVariable:"dockerHubUser")]){
+              sh "docker login -u ${env.dockerHubUser} -p ${env.dockeHubPass}"  
+            }
+          }   
+        }
+stage("Deploy"){
+}
+}
+}
+```
+    ![create-DockerHub-credentialId](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/c7fc8011-86c5-4783-9d1d-09f8085d1ab2)
+
 
   
 

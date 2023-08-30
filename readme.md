@@ -47,8 +47,24 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
    ![Output](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/0b5e4126-8a73-4dd3-b58a-a88f03725b7b)
 
   ## Declerative CICD Pipeline :
-  Create a Instance in aws connect with ssh
+  * Create a Instance in aws connect with ssh
   ![pic1](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/bf5a2b10-c568-4d63-b9ae-a05bc84f6a06)
+
+  * git clone "url"// clone project from github
+  * cd go to your project folder [ code folder ]
+  * sudo apt-get update //update 
+  * sudo apt install docker.io // install docker -apt[application package manager ] , give super user power - sudo
+  * docker --version
+  * docker ps //running this command gives you a list of running containers 
+    //get permission denied error
+    ## solving
+    * whoami //ubantu
+      //ubantu does not has docker permission
+    * sudo usermod -a -G docker @USER // modify user oermission append in a group of docker, add ubantu user in docker group
+    * sudo reboot
+    
+
+  
 
    
 

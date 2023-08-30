@@ -46,6 +46,12 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
 
    ![Output](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/0b5e4126-8a73-4dd3-b58a-a88f03725b7b)
 
+  ## Declerative CICD Pipeline :
+  Create a Instance in aws connect with ssh
+  ![pic1](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/bf5a2b10-c568-4d63-b9ae-a05bc84f6a06)
+
+   
+
 
              
 

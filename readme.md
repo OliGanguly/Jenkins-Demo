@@ -73,6 +73,40 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
 * Image directory would be /app/backend [current dir]
 * copy requirments.txt to app/backend ->requirements has all dependencies to run this project 
 * run pip install -r requirments.txt pip->python package installer
+
+## INstall Jenkins
+* sudo apt install openjdk-11-jre [Install java]
+* java -version
+* 6.go to jenkins website
+https://www.jenkins.io/doc/book/installing/linux/
+copy Installation command
+Like :
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+* sudo apt-get update
+* sudo apt-get install jenkins
+* systemctl status jenkins //status of jenkins
+* Try to connect:
+public-ip:8080
+Like - http://3.145.75.211:8080
+
+* go to Ec2 Instance
+Edit security Group
+Add One group [ Add Role ]
+Custom TCP ------Port 8080 ---- source - MY IP [ I will access Jenkis server through my IP only ]
+
+![addSecurityGroup](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/f95d4cbf-be40-48f3-a56f-6b7671c2bc5d)
+
+10.sudo cat "file path to see the passpowd" .
+![createAdminUser](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/d7161483-0842-42f9-bad0-240d2d575fdd)
+
+11.Install Suggested Plugin
+ 
+  
+
   
 
 

@@ -170,18 +170,17 @@ stage("Deploy"){
 
 * terminal -> $doker login
 
+Back To Jenkins
+  
 * Env ->Get credential from env
 * Create ID , and ADD userName Password in that ID
 * Fetch userName password from Id
 
   * Dashboard->Manage jenkins ->Credential ->System -> Global Credential -> Give User Name and Password
 
-  Id -> dockerHub
-  
+ 
 
-##Push To Docker Hub  
-
-## Installation
+## Push To Docker Hub  
 
 Install my-project with npm
 
@@ -215,7 +214,7 @@ stage("Deploy"){
 }
 }
 ```
-    ![create-DockerHub-credentialId](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/c7fc8011-86c5-4783-9d1d-09f8085d1ab2)
+![create-DockerHub-credentialId](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/c7fc8011-86c5-4783-9d1d-09f8085d1ab2)
 
 
   

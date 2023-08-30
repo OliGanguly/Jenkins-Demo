@@ -99,12 +99,13 @@ Add One group [ Add Role ]
 Custom TCP ------Port 8080 ---- source - MY IP [ I will access Jenkis server through my IP only ]
 
 ![addSecurityGroup](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/f95d4cbf-be40-48f3-a56f-6b7671c2bc5d)
-![addSecurityGroup](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/ee8c0f21-2b9a-4cca-a457-aab902573894)
 
 10.sudo cat "file path to see the passpowd" .
 ![createAdminUser](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/d7161483-0842-42f9-bad0-240d2d575fdd)
 
 11.Install Suggested Plugin
+![installPlugin](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/5156349a-1d7e-426e-888d-42b9193c6701)
+
 
 
  

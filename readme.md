@@ -128,25 +128,46 @@ Get password
 
  agents any //give task to agents [Running machine]
 
- stages{
- 
-  stage("Code"){
-  
-   },
-   
-  stage("Build"){
-  
-   },
-   
-   stage("Push to dockerhub"){
-   
-   },
-   
-   stage("deploy"){
-   
-   }
- }
- }
+## Installation
+
+Install my-project with npm
+
+```bash
+pipeline{
+agents any
+stages{
+stage("Code"){
+ steps{
+            echo "Cloning The Code"  
+            git url:"https://github.com/OliGanguly/django-notes-app.git",branch:"main"
+      }
+}
+stage("Build"){
+steps{
+             echo "Building The Code"  ,
+             sh "docker build -t note-application ."
+      } 
+}
+stage("Push To Docker Hub"){
+}
+stage("Deploy"){
+}
+}
+}
+```
+## Build Fail
+![ErrorComes](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/5acfc990-6f8d-4fd0-95bb-3bd151501dcd)
+
+* Solution [ add user in docker group ]
+* Server
+* cd /var/lib/jenkins/workspace/note-app-cicd'
+* sudo usermod -aG docker jenkins
+* sudo reboot
+* Build again
+
+
+
+    
 
 
     

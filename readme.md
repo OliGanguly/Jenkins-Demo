@@ -125,15 +125,25 @@ Get password
  * Agents is a runnin machine where you can run your code .
  * Jenkins assign task to agents 
  PipeLine{
+
  agents any //give task to agents [Running machine]
+
  stages{
+ 
   stage("Code"){
+  
    },
+   
   stage("Build"){
+  
    },
+   
    stage("Push to dockerhub"){
+   
    },
+   
    stage("deploy"){
+   
    }
  }
  }

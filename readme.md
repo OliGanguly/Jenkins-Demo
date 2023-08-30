@@ -157,6 +157,7 @@ stage("Deploy"){
 ```
 ## Build Fail
 ![ErrorComes](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/5acfc990-6f8d-4fd0-95bb-3bd151501dcd)
+![dockerPermissinDenied](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/0ae8dcc7-ca52-4c5a-b3f0-8d83d20e320c)
 
 * Solution [ add user in docker group ]
 * Server
@@ -215,6 +216,16 @@ stage("Deploy"){
 }
 ```
 ![create-DockerHub-credentialId](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/c7fc8011-86c5-4783-9d1d-09f8085d1ab2)
+
+Cannot Proceed For This error
+
+![dockerbuildunsuccessfull](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/576c0466-5769-4f78-aaef-95c21514ff65)
+
+![CannotResolveError](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/ace9e342-567c-4087-97fc-b0fd5dfe4b72)
+
+
+
+
 
 
   

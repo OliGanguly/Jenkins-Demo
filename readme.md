@@ -164,6 +164,20 @@ stage("Deploy"){
 * sudo usermod -aG docker jenkins
 * sudo reboot
 * Build again
+  //So note-application image is with you -> Push to Docker Hub
+* create account in hub.dockerhub.com
+  ![DockerHub](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/d76091e2-663e-48d7-9400-6e7e339a0e83)
+terminal -> doker login
+
+![dockerHubLogin](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/fe79376f-a0cd-4b38-ab1a-719642f5c1f3)
+
+
+  
+ 
+
+##Deploy   
+
+  
 
 
 

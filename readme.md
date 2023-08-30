@@ -102,9 +102,45 @@ Custom TCP ------Port 8080 ---- source - MY IP [ I will access Jenkis server thr
 Add Incoming Security Rule [my ip ]
 My Ip will get access of my aws ec2 server
 ![createAdminUser](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/d7161483-0842-42f9-bad0-240d2d575fdd)
+
+Unlock Jenkins
+Get password
+![jenkinsapp](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/751119d0-bd96-45be-8b80-ce7a2654aad5)
+
 10.sudo cat "file path to see the passpowd" .
 11.Install Suggested Plugin
 ![installPlugin](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/5156349a-1d7e-426e-888d-42b9193c6701)
+
+* Create job [ Freestyle , Pipeline ]
+* I choose Pipeline
+  ![jenkis-pipeline](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/f3b38533-a19b-4a14-b3cc-3e0a0eb580d6)\
+
+* Give Description
+* Add Github Projects //Copy url from github
+  ![addGithubLink](https://github.com/OliGanguly/Jenkins-Demo/assets/82031303/aa89163a-f894-48b1-ac6f-47590bc4b748)
+
+* Build Trigger -> Github Hook Trigger [ triggered with commit ]
+
+ ## Script [ Pipeline come from code ]
+ * Agents is a runnin machine where you can run your code .
+ * Jenkins assign task to agents 
+ PipeLine{
+ agents any //give task to agents [Running machine]
+ stages{
+  stage("Code"){
+   },
+  stage("Build"){
+   },
+   stage("Push to dockerhub"){
+   },
+   stage("deploy"){
+   }
+ }
+ }
+
+
+    
+
 
 
 

@@ -65,7 +65,8 @@ Dashboard -> + -> Build Pipeline view -> Name -> Select Initial Job -> No Of Dis
 
  Docker will prepare a build 
  # All this things will automated by 
- # docker build -t app_name .
+ * docker build -t app_name . //docker file build Image and Image build Docker Container
+ 
  ![dockerFile](https://github.com/OliGanguly/Jenkis-Demo/assets/82031303/17746766-d050-4256-9913-76a43dadabb2)
   
 * cat DockerFile
